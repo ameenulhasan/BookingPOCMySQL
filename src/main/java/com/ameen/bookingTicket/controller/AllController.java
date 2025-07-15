@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/booking")
 public class AllController {
 
     private  final AllService allService;
@@ -43,7 +43,7 @@ public class AllController {
         return allService.downloadBookingsExcel();
     }
 
-    @PostMapping("/uploadBooking")
+    @PostMapping("/upload")
     public ResponseEntity<String> uploadBookingsToHistory(@RequestParam("file") MultipartFile file) {
         if (file.isEmpty()) {
             return ResponseEntity.badRequest().body("Please upload a valid Excel file!");
