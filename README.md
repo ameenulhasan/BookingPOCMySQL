@@ -87,7 +87,7 @@ POST /upload
     2.Configure MySQL DB credentials
     3.Run using:
         ./mvnw spring-boot:run
-    4.Test API using Postman, Swagger UI, or any REST client
+    4.Test API using Postman
 
 📫 Contact
 Maintained by Ameenul Hasan
